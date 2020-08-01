@@ -16,8 +16,7 @@
 }
 .titlebar-buttonbox-container {
 	background-color: rgb(50,50,52);
-	max-height: 32px !important;
-	margin-top: -32px;
+	margin-top: -5.5vh !important;
 }
 #TabsToolbar {
 	min-height: 28px !important;
@@ -77,9 +76,6 @@
 }
 .tabbrowser-tab[first-visible-tab][last-visible-tab]{
 	background-color: var(--uc-bar-bg-color) !important;
-}
-{
-	display: none !important;
 }
 .tab-close-button.close-icon {
 	display: none !important;
