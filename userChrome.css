@@ -8,21 +8,21 @@
 #titlebar {
 	-moz-box-ordinal-group: 2 !important;
 }	
-#nav-bar {
+#main-window:not([inFullscreen]) #nav-bar {
 	margin-left: 3vw !important;
 }
-#nav-bar-customization-target {
-	margin-left: 25px !important;
+#main-window:not([inFullscreen]) #nav-bar-customization-target {
+	margin-left: 3vw !important;
 }
-.titlebar-buttonbox-container {
+#main-window:not([inFullscreen]) .titlebar-buttonbox-container {
 	background-color: rgb(50,50,52);
-	margin-top: -5.5vh !important;
+	margin-top: -5.25vh !important;
 }
 #TabsToolbar {
 	min-height: 28px !important;
 }
-#TabsToolbar > .toolbar-items {
-	margin-left: -66px !important;
+#main-window:not([inFullscreen]) #TabsToolbar > .toolbar-items {
+	margin-left: -3.75vw !important;
 }
 .tabbrowser-tab:not([pinned]){
 	max-width: 100vw !important;
