@@ -9,15 +9,10 @@
 	-moz-box-ordinal-group: 2 !important;
 }	
 #nav-bar {
-	margin-left: 66px !important;
+	margin-left: 3vw !important;
 }
 #nav-bar-customization-target {
 	margin-left: 25px !important;
-}
-#stop-reload-button {
-	margin-left: -36px;
-	position: relative;
-	z-index: 99;
 }
 .titlebar-buttonbox-container {
 	background-color: rgb(50,50,52);
@@ -99,5 +94,5 @@
 	text-align: left !important;
 }
 #urlbar-container {
-	margin-right: -50px !important;
+	margin-left: 3vw !important;
 }
