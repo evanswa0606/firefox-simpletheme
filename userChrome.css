@@ -1,28 +1,30 @@
 :root {
-	--uc-urlbar-bg-color: #1b1e23;
+	--uc-bg-color: #1a1e26;
 	--uc-show-new-tab-button: none;
 	--uc-show-tab-separators: none;
 	--uc-tab-separators-color: none;
 	--uc-tab-separators-width: none;
+	--uc-tab-fg-color: #FFF;
 }
+/* Options with pixel amounts could need to be adjusted, as this only works for my laptop's display */
 #titlebar {
 	-moz-box-ordinal-group: 2 !important;
 }	
-#main-window:not([inFullscreen]) #nav-bar {
+#nav-bar {
 	margin-left: 3vw !important;
 }
-#main-window:not([inFullscreen]) #nav-bar-customization-target {
-	margin-left: 3vw !important;
+#nav-bar-customization-target {
+	margin-left: 25px !important;
 }
-#main-window:not([inFullscreen]) .titlebar-buttonbox-container {
+.titlebar-buttonbox-container {
 	background-color: rgb(50,50,52);
-	margin-top: -5.25vh !important;
+	margin-top: -60px !important;
 }
 #TabsToolbar {
 	min-height: 28px !important;
 }
-#main-window:not([inFullscreen]) #TabsToolbar > .toolbar-items {
-	margin-left: -3.75vw !important;
+#TabsToolbar > .toolbar-items {
+	margin-left: -66px !important;
 }
 .tabbrowser-tab:not([pinned]){
 	max-width: 100vw !important;
@@ -33,16 +35,13 @@
 .tab-line,
 #tracking-protection-icon-container, 
 #back-button, 
-#forward-button {
+#forward-button,
+#identity-box {
 	display: none !important;
 	border: none !important;
 }
-#identity-box {
-	visibility: collapse !important;
-}
 #urlbar-background, .titlebar-buttonbox-container, #nav-bar, .tabbrowser-tab:not([selected]) .tab-background{
-	background: none !important;
-    background-color: var(--uc-urlbar-bg-color) !important;
+    background: var(--uc-bg-color) !important;
 	border: none !important;
 }
 #urlbar[breakout][breakout-extend] {
@@ -59,13 +58,10 @@
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
     animation-name: none !important;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .05) !important;
+    box-shadow: none !important;
 }
 #urlbar-background {
 	box-shadow: none !important;
-}
-#nav-bar, .titlebar-buttonbox-container {
-	border-bottom: 1px solid rgb(200,200,200);
 }
 #tabs-newtab-button {
 	display: var(--uc-show-new-tab-button) !important;
@@ -91,4 +87,11 @@
 }
 #urlbar-container {
 	margin-left: 3vw !important;
+}
+.tab-text.tab-label {
+	color: var(--uc-tab-fg-color) !important;
+}
+#navigator-toolbox {
+	border-bottom: 0px solid red !important;
+	background: var(--uc-bg-color) !important;
 }
